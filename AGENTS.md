@@ -13,6 +13,18 @@ A structured agent for tackling complex development tasks through research, inno
 
 ## Global Practices
 
+### GitHub Default Context
+
+When working with GitHub-related operations:
+
+- **Default repository**: `vm0-ai/vm0` - Use this when no specific repository is mentioned
+- **"me" / "my"**: Refers to GitHub user `hulh122` (https://github.com/hulh122)
+
+Examples:
+- "list my PRs" → `gh pr list --author hulh122`
+- "show repo issues" → `gh issue list -R vm0-ai/vm0`
+- "assign this issue to me" → `gh issue edit {id} --add-assignee hulh122`
+
 ### Code Repository Analysis
 
 When the user mentions a code repository (GitHub, GitLab, etc.):
